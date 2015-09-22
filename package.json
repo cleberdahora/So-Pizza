@@ -6,18 +6,18 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "cloudinary": "*",
     "body-parser": "~1.5.2",
     "browserify": "*",
     "browserify-fs": "*",
+    "cloudinary": "*",
     "express": "~4.7.2",
     "express-myconnection": "*",
     "getmodule": "0.0.9",
     "jade": "*",
     "method-override": "~2.1.2",
-    "morgan": "~1.2.2",
-    "mysql": "*",
     "mongoose": "*",
+    "morgan": "~1.2.2",
+    "mysql": "^2.9.0",
     "routes": "*"
   },
   "engines": {
@@ -35,7 +35,9 @@
     "url": "https://github.com/heroku/so-pizza-brasil2/issues"
   },
   "homepage": "https://github.com/heroku/so-pizza-brasil2",
-  "devDependencies": {},
+  "devDependencies": {
+    "browserify": "^11.1.0"
+  },
   "keywords": [
     "sopizza"
   ]

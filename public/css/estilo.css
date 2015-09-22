@@ -15,7 +15,103 @@ body{
     height:20px;
     margin: 0;
 }
+.pizzarias{
+    margin-left:30px;
+    background-color:white;
+    width: 200px;
+    height:120px;
+}
+.divLogo{
+    width: 200px;
+    height:120px;
+}
+.Nome{
+    margin-top:-90px;
+    font-size:22px;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    position: relative;
+}
+.Endereco{
+    font-size:22px;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    position: relative;
+}
 
+.opacity{
+    margin-top:40px;
+    width: 200px;
+    height: 60px;
+    background-color:black;
+    opacity:0.65;
+    -moz-opacity: 0.65;
+    filter: alpha(opacity=65);
+    position:absolute;
+}
+
+#Endereco1, #Endereco2, #Endereco3,#Endereco4,#Endereco5,#Endereco6, #Endereco7, #Endereco8{
+    display:none;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5,#btn6,#btn7,#btn8{
+    display:none;
+}
+
+.bt{
+    margin-top:5px;
+    font-size:15px;
+    background: #009933;
+    width:75px;
+    color:white;
+    height:35px;
+    box-shadow: 0px 0px 1em #666;
+    -webkit-box-shadow: 0px 0px 1em #666;
+    -moz-box-shadow: 0px 0px 1em #666;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    
+}
+
+.bt> a:hover{
+    color:white;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.elemento2{
+            
+           position:absolute;
+          width:200px;
+                
+}
+.bt{
+    margin-top:5px;
+    font-size:15px;
+    background: #009933;
+    width:75px;
+    color:white;
+    height:35px;
+    box-shadow: 0px 0px 1em #666;
+    -webkit-box-shadow: 0px 0px 1em #666;
+    -moz-box-shadow: 0px 0px 1em #666;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    
+}
+
+.bt> a:hover{
+    color:white;
+    text-decoration:none;
+    font-weight: bold;
+}
+#col{
+    color:white;
+}
 .ui-autocomplete { 
                 background: #fff; 
                 border-top: 1px solid #ccc;
@@ -236,8 +332,15 @@ input{
     .back{
      margin-left: -20px;
      position:absolute;
+     height:1300px;
     }
-    
+    #left{
+        margin-left:85px;
+    }
+    .pizzarias{
+        margin-top:10px;
+        margin-left:85px;
+    }
     #form{
         margin-top:-60px;
     }
@@ -251,19 +354,20 @@ input{
     .back3{
         margin-left:65px;
         width: 200px;
+       
     }
-                #txtEndereco{
+        
+    #txtEndereco{
                     padding: 4px 42px;
                 }
                 .ui-autocomplete { 
                     width: 290px !important;
                 }
-                .row, right{
+                 #right{
                     visibility: hidden;
-                }
-                .row> .span3{
                     height:0;
                 }
+                
                 h3{
                     padding-top: -200px;
                 }
@@ -273,9 +377,7 @@ form{
                 h1{
                     margin-top:-20px;
                 }
-                 img{
-                    margin-top:-30px;
-                }
+                 
                 .right2{
                     visibility: hidden;
                     height:20px;

@@ -49,6 +49,28 @@ function carregarPontos() {
     });
 
 }
+function CarregarSugestoes(){
+
+$.get('/consult', function (pontos) {
+
+         $.each(pontos, function (index, ponto) {
+                        var lista = ponto.Latitude;
+                        
+                        
+                        $('#divLista').html(lista);
+
+                       
+
+
+                       
+
+                    });
+
+
+    });
+
+}
+
 
 function initialize() {
     function getUrlVars() {

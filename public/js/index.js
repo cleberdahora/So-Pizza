@@ -41,386 +41,266 @@
                         console.log(res);
 
                     });
-                    
-                    /*request2
-                   
-                    .get('/sugestoes')
-                    .query({latitude: first, longitude: second})
-                    .end(function (err, res) {
 
-                        console.log(res);
+            /*request2
+             
+             .get('/sugestoes')
+             .query({latitude: first, longitude: second})
+             .end(function (err, res) {
+             
+             console.log(res);
+             
+             });*/
+         
 
-                    });*/
-            function getUrlVars() {
-                var vars = {};
-                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-                    vars[key] = value;
-                });
-                return vars;
-            }
+            
+               
 
-            var first = getUrlVars()["latitude"];
-            var second = getUrlVars()["longitude"];
+               
 
 
             
 
+
             function CarregaSugestoes() {
-                   
-                
-
-
-                $.get('/sugestoes?latitude='+first+'&longitude='+second+'', function (pontos) {
-                    var listaLongitude;
+                    var latitude;
+                    var longitude;
+                function success(position) {
                     
+
+                     latitude = position.coords.latitude;
+                     longitude = position.coords.longitude;
+                     
+                     $.get('/sugestoes?latitude=' + latitude + '&longitude=' + longitude + '', function (pontos) {
+                    var listaLongitude;
+
                     var PizzariaID1;
                     var NomePizzaria1;
                     var Logo1;
                     var Endereco1;
                     var Tel1;
-                    
+
                     var PizzariaID2;
                     var NomePizzaria2;
                     var Logo2;
                     var Endereco2;
                     var Tel2;
-                    
+
                     var PizzariaID3;
                     var NomePizzaria3;
                     var Logo3;
                     var Endereco3;
                     var Tel3;
-                    
+
                     var PizzariaID4;
                     var NomePizzaria4;
                     var Logo4;
                     var Endereco4;
                     var Tel4;
-                    
+
                     var PizzariaID5;
                     var NomePizzaria5;
                     var Logo5;
                     var Endereco5;
                     var Tel5;
-                    
+
                     var PizzariaID6;
                     var NomePizzaria6;
                     var Logo6;
                     var Endereco6;
                     var Tel6;
-                    
+
                     var PizzariaID7;
                     var NomePizzaria7;
                     var Logo7;
                     var Endereco7;
                     var Tel7;
-                    
-                    
+
+
                     var PizzariaID8;
                     var NomePizzaria8;
                     var Logo8;
                     var Endereco8;
                     var Tel8;
-                    
-                    
+
+
                     $.each(pontos, function (index, ponto) {
-                        if(index==0){
-                            
+                        if (index == 0) {
+
                             PizzariaID1 = ponto.id;
-                            NomePizzaria1=ponto.Nome;
-                            Logo1=ponto.fotoLogo;
-                            Endereco1= ponto.Endereco;
-                            Tel1=ponto.Telefone;
+                            NomePizzaria1 = ponto.Nome;
+                            Logo1 = ponto.fotoLogo;
+                            Endereco1 = ponto.Endereco;
+                            Tel1 = ponto.Telefone;
                         }
-                        
-                        if(index==1){
-                            
+
+                        if (index == 1) {
+
                             PizzariaID2 = ponto.id;
-                            NomePizzaria2=ponto.Nome;
-                            Logo2=ponto.fotoLogo;
-                            Endereco2= ponto.Endereco;
-                            Tel2=ponto.Telefone;
+                            NomePizzaria2 = ponto.Nome;
+                            Logo2 = ponto.fotoLogo;
+                            Endereco2 = ponto.Endereco;
+                            Tel2 = ponto.Telefone;
                         }
-                        
-                        if(index==2){
-                            
+
+                        if (index == 2) {
+
                             PizzariaID3 = ponto.id;
-                            NomePizzaria3=ponto.Nome;
-                            Logo3=ponto.fotoLogo;
-                            Endereco3= ponto.Endereco;
-                            Tel3=ponto.Telefone;
+                            NomePizzaria3 = ponto.Nome;
+                            Logo3 = ponto.fotoLogo;
+                            Endereco3 = ponto.Endereco;
+                            Tel3 = ponto.Telefone;
                         }
-                        
-                        if(index==3){
-                            
+
+                        if (index == 3) {
+
                             PizzariaID4 = ponto.id;
-                            NomePizzaria4=ponto.Nome;
-                            Logo4=ponto.fotoLogo;
-                            Endereco4= ponto.Endereco;
-                            Tel4=ponto.Telefone;
+                            NomePizzaria4 = ponto.Nome;
+                            Logo4 = ponto.fotoLogo;
+                            Endereco4 = ponto.Endereco;
+                            Tel4 = ponto.Telefone;
                         }
-                        if(index==4){
-                            
+                        if (index == 4) {
+
                             PizzariaID5 = ponto.id;
-                            NomePizzaria5=ponto.Nome;
-                            Logo5=ponto.fotoLogo;
-                            Endereco5= ponto.Endereco;
-                            Tel5=ponto.Telefone;
+                            NomePizzaria5 = ponto.Nome;
+                            Logo5 = ponto.fotoLogo;
+                            Endereco5 = ponto.Endereco;
+                            Tel5 = ponto.Telefone;
                         }
-                        if(index==5){
-                            
+                        if (index == 5) {
+
                             PizzariaID6 = ponto.id;
-                            NomePizzaria6=ponto.Nome;
-                            Logo6=ponto.fotoLogo;
-                            Endereco6= ponto.Endereco;
-                            Tel6=ponto.Telefone;
+                            NomePizzaria6 = ponto.Nome;
+                            Logo6 = ponto.fotoLogo;
+                            Endereco6 = ponto.Endereco;
+                            Tel6 = ponto.Telefone;
                         }
-                        if(index==6){
-                            
+                        if (index == 6) {
+
                             PizzariaID7 = ponto.id;
-                            NomePizzaria7=ponto.Nome;
-                            Logo7=ponto.fotoLogo;
-                            Endereco7= ponto.Endereco;
-                            Tel7=ponto.Telefone;
+                            NomePizzaria7 = ponto.Nome;
+                            Logo7 = ponto.fotoLogo;
+                            Endereco7 = ponto.Endereco;
+                            Tel7 = ponto.Telefone;
                         }
-                        if(index==7){
-                            
+                        if (index == 7) {
+
                             PizzariaID8 = ponto.id;
-                            NomePizzaria8=ponto.Nome;
-                            Logo8=ponto.fotoLogo;
-                            Endereco8= ponto.Endereco;
-                            Tel8=ponto.Telefone;
+                            NomePizzaria8 = ponto.Nome;
+                            Logo8 = ponto.fotoLogo;
+                            Endereco8 = ponto.Endereco;
+                            Tel8 = ponto.Telefone;
                         }
-                        
-                        
-                        if(first!= null){
-                        listaLongitude = ponto.Longitude;
-                        
-                        console.log("uepa:" +index);
+
+
+                        if (latitude != null) {
+                            listaLongitude = ponto.Longitude;
+
+                            console.log("uepa:" + index);
                         }
-                        
+
                         $('#NomePizzaria1').html(NomePizzaria1);
                         $('#divLogo1').attr('src', Logo1);
-                        $('#Endereco1').html(Endereco1);
-                        
-                        $('#PizzariaID1').attr('href','pizzaria.html?id='+ PizzariaID1);
-                        $('#Tel1').attr('href','tel:'+ Tel1);
-                        
-                        
+                        $('#Endereco1').html(NomePizzaria1);
+
+                        $('#PizzariaID1').attr('href', 'pizzaria.html?id=' + PizzariaID1);
+                        $('#Tel1').attr('href', 'tel:' + Tel1);
+
+
                         $('#NomePizzaria2').html(NomePizzaria2);
                         $('#divLogo2').attr('src', Logo2);
-                        $('#Endereco2').html(Endereco2);
-                        
-                        $('#PizzariaID2').attr('href','pizzaria.html?id='+ PizzariaID2);
-                        $('#Tel2').attr('href','tel:'+ Tel2);
-                        
+                        $('#Endereco2').html(NomePizzaria2);
+
+                        $('#PizzariaID2').attr('href', 'pizzaria.html?id=' + PizzariaID2);
+                        $('#Tel2').attr('href', 'tel:' + Tel2);
+
                         $('#NomePizzaria3').html(NomePizzaria3);
                         $('#divLogo3').attr('src', Logo3);
-                        $('#Endereco3').html(Endereco3);
-                        
-                        $('#PizzariaID3').attr('href','pizzaria.html?id='+ PizzariaID3);
-                        $('#Tel3').attr('href','tel:'+ Tel3);
-                        
+                        $('#Endereco3').html(NomePizzaria3);
+
+                        $('#PizzariaID3').attr('href', 'pizzaria.html?id=' + PizzariaID3);
+                        $('#Tel3').attr('href', 'tel:' + Tel3);
+
                         $('#NomePizzaria4').html(NomePizzaria4);
                         $('#divLogo4').attr('src', Logo4);
-                        $('#Endereco4').html(Endereco4);
-                        
-                        $('#PizzariaID4').attr('href','pizzaria.html?id='+ PizzariaID4);
-                        $('#Tel4').attr('href','tel:'+ Tel4);
-                        
+                        $('#Endereco4').html(NomePizzaria4);
+
+                        $('#PizzariaID4').attr('href', 'pizzaria.html?id=' + PizzariaID4);
+                        $('#Tel4').attr('href', 'tel:' + Tel4);
+
                         $('#NomePizzaria5').html(NomePizzaria5);
                         $('#divLogo5').attr('src', Logo5);
-                        $('#Endereco5').html(Endereco5);
-                        
-                        $('#PizzariaID5').attr('href','pizzaria.html?id='+ PizzariaID5);
-                        $('#Tel5').attr('href','tel:'+ Tel5);
-                        
+                        $('#Endereco5').html(NomePizzaria5);
+
+                        $('#PizzariaID5').attr('href', 'pizzaria.html?id=' + PizzariaID5);
+                        $('#Tel5').attr('href', 'tel:' + Tel5);
+
                         $('#NomePizzaria6').html(NomePizzaria6);
                         $('#divLogo6').attr('src', Logo6);
-                        $('#Endereco6').html(Endereco6);
-                        
-                        $('#PizzariaID6').attr('href','pizzaria.html?id='+ PizzariaID6);
-                        $('#Tel6').attr('href','tel:'+ Tel6);
-                        
+                        $('#Endereco6').html(NomePizzaria6);
+
+                        $('#PizzariaID6').attr('href', 'pizzaria.html?id=' + PizzariaID6);
+                        $('#Tel6').attr('href', 'tel:' + Tel6);
+
                         $('#NomePizzaria7').html(NomePizzaria7);
                         $('#divLogo7').attr('src', Logo7);
-                        $('#Endereco7').html(Endereco7);
-                        
-                        $('#PizzariaID7').attr('href','pizzaria.html?id='+ PizzariaID7);
-                        $('#Tel7').attr('href','tel:'+ Tel7);
-                        
+                        $('#Endereco7').html(NomePizzaria7);
+
+                        $('#PizzariaID7').attr('href', 'pizzaria.html?id=' + PizzariaID7);
+                        $('#Tel7').attr('href', 'tel:' + Tel7);
+
                         $('#NomePizzaria8').html(NomePizzaria8);
                         $('#divLogo8').attr('src', Logo8);
-                        $('#Endereco8').html(Endereco8);
+                        $('#Endereco8').html(NomePizzaria8);
 
-                        $('#PizzariaID8').attr('href','pizzaria.html?id='+ PizzariaID8);
-                        $('#Tel8').attr('href','tel:'+ Tel8);
+                        $('#PizzariaID8').attr('href', 'pizzaria.html?id=' + PizzariaID8);
+                        $('#Tel8').attr('href', 'tel:' + Tel8);
                     });
 
 
 
                 });
 
-            }
-
-
-            function carregarPontos() {
-
-
-                $.get('/consult', function (pontos) {
-
-                    $.each(pontos, function (index, ponto) {
-
-                        var marker = new google.maps.Marker({
-                            icon: 'http://res.cloudinary.com/hhktgqpms/image/upload/v1438017936/pizza_xrfdfi.png',
-                            position: new google.maps.LatLng(ponto.Latitude, ponto.Longitude),
-                            title: ponto.Endereco,
-                            map: map,
-                            pixelOffset: new google.maps.Size(-150, 0)
-
-
-                        });
-
-                        var infowindow = new google.maps.InfoWindow({
-                            content: "<h4 ><a style='color:black;' href='pizzaria.html?id= " + ponto.id + "' target=''>" + ponto.Nome + "</a></h4>" + "<h5>" + ponto.Endereco + "</h5>",
-                            maxWidth: 700
-                        });
-
-
-                        google.maps.event.addListener(marker, 'click', function () {
-                            infowindow.open(map, marker);
-                        });
-
-                    });
-
-
-                });
-
-            }
-
-            function initialize() {
-                function getUrlVars() {
-                    var vars = {};
-                    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-                        vars[key] = value;
-                    });
-                    return vars;
+                  
                 }
 
-                var first = getUrlVars()["latitude"];
-                var second = getUrlVars()["longitude"];
-                var latlng = new google.maps.LatLng(first, second);
-                var options = {
-                    zoom: 5,
-                    center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
+                function error(msg) {
+                    var s = document.querySelector('#status');
+                    s.innerHTML = typeof msg == 'string' ? msg : "falhou";
+                    s.className = 'fail';
+                }
 
-                map = new google.maps.Map(document.getElementById("mapa"), options);
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(success, error);
+                } else {
+                    error('Seu navegador não suporta <b style="color:black;background-color:#ffff66">Geolocalização</b>!');
+                }
+               
 
-                geocoder = new google.maps.Geocoder();
+                
 
-                marker = new google.maps.Marker({
-                    map: map,
-                    draggable: true,
-                    icon: 'http://res.cloudinary.com/hhktgqpms/image/upload/v1438017935/ico_1_eucvwo.png',
-                    animation: google.maps.Animation.BOUNCE
-
-                });
-
-                marker.setPosition(latlng);
-                map.setZoom(12);
             }
 
 
             $(document).ready(function () {
 
-                initialize();
+               
 
-                carregarPontos();
 
                 CarregaSugestoes();
 
-                function carregarNoMapa(endereco) {
-                    geocoder.geocode({'address': endereco + ', Brasil', 'region': 'BR'}, function (results, status) {
-                        if (status == google.maps.GeocoderStatus.OK) {
-                            if (results[0]) {
-                                var latitude = results[0].geometry.location.lat();
-                                var longitude = results[0].geometry.location.lng();
-
-                                $('#txtEndereco').val(results[0].formatted_address);
-                                $('#txtLatitude').val(latitude);
-                                $('#txtLongitude').val(longitude);
-
-                                var location = new google.maps.LatLng(latitude, longitude);
-                                marker.setPosition(location);
-                                map.setCenter(location);
-                                map.setZoom(16);
-                            }
-                        }
-                    })
-                }
-
-                $("#btnEndereco").click(function () {
-
-                    if ($(this).val() != "")
-                        carregarNoMapa($("#txtEndereco").val());
-
-                });
-
-                $("#txtEndereco").blur(function () {
-                    if ($(this).val() != "")
-                        carregarNoMapa($(this).val());
-                });
-
-                google.maps.event.addListener(marker, 'drag', function () {
-                    geocoder.geocode({'latLng': marker.getPosition()}, function (results, status) {
-                        if (status == google.maps.GeocoderStatus.OK) {
-                            if (results[0]) {
-                                $('#txtEndereco').val(results[0].formatted_address);
-                                $('#txtLatitude').val(marker.getPosition().lat());
-                                $('#txtLongitude').val(marker.getPosition().lng());
-                            }
-                        }
-                    });
-                });
-
-                $("#txtEndereco").autocomplete({
-                    source: function (request, response) {
-                        geocoder.geocode({'address': request.term + ', Brasil', 'region': 'BR'}, function (results, status) {
-                            response($.map(results, function (item) {
-                                return {
-                                    label: item.formatted_address,
-                                    value: item.formatted_address,
-                                    latitude: item.geometry.location.lat(),
-                                    longitude: item.geometry.location.lng()
-                                }
-                            }));
-                        })
-                    },
-                    select: function (event, ui) {
-                        $("#txtLatitude").val(ui.item.latitude);
-                        $("#txtLongitude").val(ui.item.longitude);
-                        var location = new google.maps.LatLng(ui.item.latitude, ui.item.longitude);
-                        marker.setPosition(location);
-                        map.setCenter(location);
-                        map.setZoom(16);
-                    }
-                });
 
 
 
-                $("form").submit(function (event) {
 
-                    /*event.preventDefault();
-                     
-                     var endereco = $("#txtEndereco").val();
-                     var latitude = $("#txtLatitude").val();
-                     var longitude = $("#txtLongitude").val();
-                     
-                     alert("Endereço: " + endereco + "\nLatitude: " + latitude + "\nLongitude: " + longitude);
-                     */
-                });
+
+
+
+
+
+
+
 
             });
         }, {"superagent": 2}], 2: [function (require, module, exports) {

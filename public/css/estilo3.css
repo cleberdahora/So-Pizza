@@ -14,13 +14,13 @@
     border-top: 0;
     border-left: 0;
     border-right:0;
-     box-shadow: 0px 0px 1em #666;
+    box-shadow: 0px 0px 1em #666;
     -webkit-box-shadow: 0px 0px 1em #666;
     -moz-box-shadow: 0px 0px 1em #666;
     margin-top:-20px;
     margin-left:470px;
-    
-    
+
+
 }
 
 
@@ -62,7 +62,7 @@ img.ca{
 .back{
 
     color: #5a5a5a;
-    
+
     background-color:#FFD98A;
     background-image:url('http://res.cloudinary.com/hhktgqpms/image/upload/v1438017931/background_ccnxtw.png');
 
@@ -119,15 +119,20 @@ img.ca{
     font-size:30px;
 }
 .borda{
-                border-top-width: 1px;
+    border-top-width: 1px;
 
-                border-top-style: solid;
+    border-top-style: solid;
 
-                border-top-color: #7b6e6e;
-            }
-                   
+    border-top-color: #7b6e6e;
+}
+.b2> a:hover{
+    color:white;
+    text-decoration:none;
+    font-weight: bold;
+}
+
 @media (max-width: 767px){
-    
+
     #ma{
         margin-left: 0px;
     }
@@ -140,9 +145,9 @@ img.ca{
         position:fixed;
     }
     .b2> a:hover{
-      color:white;
-      text-decoration:none;
-      font-weight: bold;
+        color:white;
+        text-decoration:none;
+        font-weight: bold;
     }
     .back5{
         margin-top:-50px;
@@ -158,14 +163,14 @@ img.ca{
     }
 
     .back7{
-       margin-top:1000px;
+        margin-top:1000px;
     }
 
     .back4{
 
         height:236px;
     }
-    
+
     .back{
         margin-left:-20px;
         width:360px;
@@ -189,5 +194,5 @@ img.ca{
         width:390px;
     }
     body{ overflow-x: hidden;
-               }
+    }
 }
