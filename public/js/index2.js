@@ -202,7 +202,7 @@
 
                         $('#NomePizzaria1').html(NomePizzaria1);
                         $('#divLogo1').attr('src', Logo1);
-                        $('#Endereco1').html(NomePizzaria1);
+                        $('#Endereco1').html(Endereco1);
 
                         $('#PizzariaID1').attr('href', 'pizzaria.html?id=' + PizzariaID1);
                         $('#Tel1').attr('href', 'tel:' + Tel1);
@@ -210,49 +210,49 @@
 
                         $('#NomePizzaria2').html(NomePizzaria2);
                         $('#divLogo2').attr('src', Logo2);
-                        $('#Endereco2').html(NomePizzaria2);
+                        $('#Endereco2').html(Endereco2);
 
                         $('#PizzariaID2').attr('href', 'pizzaria.html?id=' + PizzariaID2);
                         $('#Tel2').attr('href', 'tel:' + Tel2);
 
                         $('#NomePizzaria3').html(NomePizzaria3);
                         $('#divLogo3').attr('src', Logo3);
-                        $('#Endereco3').html(NomePizzaria3);
+                        $('#Endereco3').html(Endereco3);
 
                         $('#PizzariaID3').attr('href', 'pizzaria.html?id=' + PizzariaID3);
                         $('#Tel3').attr('href', 'tel:' + Tel3);
 
                         $('#NomePizzaria4').html(NomePizzaria4);
                         $('#divLogo4').attr('src', Logo4);
-                        $('#Endereco4').html(NomePizzaria4);
+                        $('#Endereco4').html(Endereco4);
 
                         $('#PizzariaID4').attr('href', 'pizzaria.html?id=' + PizzariaID4);
                         $('#Tel4').attr('href', 'tel:' + Tel4);
 
                         $('#NomePizzaria5').html(NomePizzaria5);
                         $('#divLogo5').attr('src', Logo5);
-                        $('#Endereco5').html(NomePizzaria5);
+                        $('#Endereco5').html(Endereco5);
 
                         $('#PizzariaID5').attr('href', 'pizzaria.html?id=' + PizzariaID5);
                         $('#Tel5').attr('href', 'tel:' + Tel5);
 
                         $('#NomePizzaria6').html(NomePizzaria6);
                         $('#divLogo6').attr('src', Logo6);
-                        $('#Endereco6').html(NomePizzaria6);
+                        $('#Endereco6').html(Endereco6);
 
                         $('#PizzariaID6').attr('href', 'pizzaria.html?id=' + PizzariaID6);
                         $('#Tel6').attr('href', 'tel:' + Tel6);
 
                         $('#NomePizzaria7').html(NomePizzaria7);
                         $('#divLogo7').attr('src', Logo7);
-                        $('#Endereco7').html(NomePizzaria7);
+                        $('#Endereco7').html(Endereco7);
 
                         $('#PizzariaID7').attr('href', 'pizzaria.html?id=' + PizzariaID7);
                         $('#Tel7').attr('href', 'tel:' + Tel7);
 
                         $('#NomePizzaria8').html(NomePizzaria8);
                         $('#divLogo8').attr('src', Logo8);
-                        $('#Endereco8').html(NomePizzaria8);
+                        $('#Endereco8').html(Endereco8);
 
                         $('#PizzariaID8').attr('href', 'pizzaria.html?id=' + PizzariaID8);
                         $('#Tel8').attr('href', 'tel:' + Tel8);

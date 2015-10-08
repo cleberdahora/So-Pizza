@@ -282,7 +282,7 @@
                         });
 
                         var infowindow = new google.maps.InfoWindow({
-                            content: "<h4 ><a style='color:black;' href='pizzaria.html?id= " + ponto.id + "' target=''>" + ponto.Nome + "</a></h4>" + "<h5>" + ponto.Endereco + "</h5>",
+                            content: "<h4 ><a style='color:#cc0000;' href='pizzaria.html?id= " + ponto.id + "' target=''>" + ponto.Nome + "</a></h4>" + "<h5>" + ponto.Endereco + "</h5>",
                             maxWidth: 700
                         });
 
