@@ -73,6 +73,7 @@
                 $.get('/sugestoes?latitude='+first+'&longitude='+second+'', function (pontos) {
                     var listaLongitude;
                     
+                    
                     var PizzariaID1;
                     var NomePizzaria1;
                     var Logo1;
@@ -124,6 +125,7 @@
                     
                     
                     $.each(pontos, function (index, ponto) {
+                       
                         if(index==0){
                             
                             PizzariaID1 = ponto.id;
@@ -131,6 +133,7 @@
                             Logo1=ponto.fotoLogo;
                             Endereco1= ponto.Endereco;
                             Tel1=ponto.Telefone;
+                            
                         }
                         
                         if(index==1){
@@ -140,6 +143,7 @@
                             Logo2=ponto.fotoLogo;
                             Endereco2= ponto.Endereco;
                             Tel2=ponto.Telefone;
+                            
                         }
                         
                         if(index==2){
@@ -149,6 +153,7 @@
                             Logo3=ponto.fotoLogo;
                             Endereco3= ponto.Endereco;
                             Tel3=ponto.Telefone;
+                            
                         }
                         
                         if(index==3){
@@ -158,6 +163,7 @@
                             Logo4=ponto.fotoLogo;
                             Endereco4= ponto.Endereco;
                             Tel4=ponto.Telefone;
+                            
                         }
                         if(index==4){
                             
@@ -166,6 +172,7 @@
                             Logo5=ponto.fotoLogo;
                             Endereco5= ponto.Endereco;
                             Tel5=ponto.Telefone;
+                            
                         }
                         if(index==5){
                             
@@ -174,6 +181,7 @@
                             Logo6=ponto.fotoLogo;
                             Endereco6= ponto.Endereco;
                             Tel6=ponto.Telefone;
+                            
                         }
                         if(index==6){
                             
@@ -182,6 +190,7 @@
                             Logo7=ponto.fotoLogo;
                             Endereco7= ponto.Endereco;
                             Tel7=ponto.Telefone;
+                            
                         }
                         if(index==7){
                             
@@ -190,6 +199,7 @@
                             Logo8=ponto.fotoLogo;
                             Endereco8= ponto.Endereco;
                             Tel8=ponto.Telefone;
+                            
                         }
                         
                         
@@ -198,6 +208,8 @@
                         
                         console.log("uepa:" +index);
                         }
+                        
+                        
                         
                         $('#NomePizzaria1').html(NomePizzaria1);
                         $('#divLogo1').attr('src', Logo1);

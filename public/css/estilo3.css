@@ -3,7 +3,6 @@
     margin-left: 30px;
 }
 
-
 .b2{
     font-size:22px;
     background: #009933;
@@ -131,6 +130,10 @@ img.ca{
 }
 
 @media (max-width: 767px){
+    .icone{
+    width:300px;
+}
+
 
     #ma{
         margin-left: 0px;

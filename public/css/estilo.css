@@ -148,7 +148,7 @@ body{
     background-color: #993333;
     width:400px;
     height: 40px;
-    margin-left: 480px;
+    
 }
 .back3> h4{
     padding-top:9px;
@@ -169,9 +169,7 @@ body{
     margin-left:720px;
     margin-top:-70px;
 }
-#right{
-    margin-left:220px;
-}
+
 .h4,.h5{
     text-shadow: black 0.1em 0.1em 0.2em;
     color: white;

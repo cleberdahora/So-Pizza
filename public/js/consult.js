@@ -569,7 +569,7 @@
 
 
                     var imagem = 'http://res.cloudinary.com/hih0bvg21/image/upload/v1441298095/pizzalado_cm5rl9.png';
-                    
+                    var icon = 'http://res.cloudinary.com/hhktgqpms/image/upload/v1448330923/icon_n9iznd.png';
                     var PizzariaFoto1;
 
  var PizzariaFoto2; var PizzariaFoto3; var PizzariaFoto4; var PizzariaFoto5; var PizzariaFoto6;
@@ -1163,7 +1163,8 @@
                     $('#divPreco1').html(PizzariaPreco1);
                     $('#divIngredientes1').html(PizzariaIngredientes1);
                     $('#imagem1').attr('src', imagem);
-
+                    $('#icone').attr('src', icon);
+ 
 
                     $('#divSabor2').html(PizzariaSabor2);
                     $('#divPreco2').html(PizzariaPreco2);
@@ -1749,138 +1750,432 @@
                     $('#divIngredientes115').html(PizzariaIngredientes115);
                     $('#imagem115').attr('src', imagem);
                     
+                    
+                    
+                    if (PizzariaSabor1 == "")
+                    {
+                        $("#imagem1").css("display", "none");
+                        $("#divSabor1").css("display", "none");
+                        $("#divIngredientes1").css("display", "none");
+                        $("#divPreco1").css("display", "none");
+                        $("#icone").css("display", "block");
+                    }
+                    if(PizzariaSabor1 != "")
+                    {
+                        $("#icone").css("display", "none");
+                    }
+                    if (PizzariaSabor2 == "")
+                    {
+                        $("#imagem2").css("display", "none");
+                        $("#divSabor2").css("display", "none");
+                        $("#divIngredientes2").css("display", "none");
+                        $("#divPreco2").css("display", "none");
+                    }
+                    if (PizzariaSabor3 == "")
+                    {
+                        $("#imagem3").css("display", "none");
+                        $("#divSabor3").css("display", "none");
+                        $("#divIngredientes3").css("display", "none");
+                        $("#divPreco3").css("display", "none");
+                    }
+                    if (PizzariaSabor4 == "")
+                    {
+                        $("#imagem4").css("display", "none");
+                        $("#divSabor4").css("display", "none");
+                        $("#divIngredientes4").css("display", "none");
+                        $("#divPreco4").css("display", "none");
+                    }
+                    
+                    if (PizzariaSabor5 == "")
+                    {
+                        $("#imagem5").css("display", "none");
+                        $("#divSabor5").css("display", "none");
+                        $("#divIngredientes5").css("display", "none");
+                        $("#divPreco5").css("display", "none");
+                    }
+                    if (PizzariaSabor6 == "")
+                    {
+                        $("#imagem6").css("display", "none");
+                        $("#divSabor6").css("display", "none");
+                        $("#divIngredientes6").css("display", "none");
+                        $("#divPreco6").css("display", "none");
+                    }
+                    if (PizzariaSabor7 == "")
+                    {
+                        $("#imagem7").css("display", "none");
+                        $("#divSabor7").css("display", "none");
+                        $("#divIngredientes7").css("display", "none");
+                        $("#divPreco7").css("display", "none");
+                    }
+                    if (PizzariaSabor8 == "")
+                    {
+                        $("#imagem8").css("display", "none");
+                        $("#divSabor8").css("display", "none");
+                        $("#divIngredientes8").css("display", "none");
+                        $("#divPreco8").css("display", "none");
+                    }
+                    if (PizzariaSabor9 == "")
+                    {
+                        $("#imagem9").css("display", "none");
+                        $("#divSabor9").css("display", "none");
+                        $("#divIngredientes9").css("display", "none");
+                        $("#divPreco9").css("display", "none");
+                    }
+                    
+                    if (PizzariaSabor10 == "")
+                    {
+                        $("#imagem10").css("display", "none");
+                        $("#divSabor10").css("display", "none");
+                        $("#divIngredientes10").css("display", "none");
+                        $("#divPreco10").css("display", "none");
+                    }
+                    if (PizzariaSabor11 == "")
+                    {
+                        $("#imagem11").css("display", "none");
+                        $("#divSabor11").css("display", "none");
+                        $("#divIngredientes11").css("display", "none");
+                        $("#divPreco11").css("display", "none");
+                    }
+                    if (PizzariaSabor12 == "")
+                    {
+                        $("#imagem12").css("display", "none");
+                        $("#divSabor12").css("display", "none");
+                        $("#divIngredientes12").css("display", "none");
+                        $("#divPreco12").css("display", "none");
+                    }
+                    
+                    if (PizzariaSabor13 == "")
+                    {
+                        $("#imagem13").css("display", "none");
+                        $("#divSabor13").css("display", "none");
+                        $("#divIngredientes13").css("display", "none");
+                        $("#divPreco13").css("display", "none");
+                    }
+                    
+                    if (PizzariaSabor14 == "")
+                    {
+                        $("#imagem14").css("display", "none");
+                        $("#divSabor14").css("display", "none");
+                        $("#divIngredientes14").css("display", "none");
+                        $("#divPreco14").css("display", "none");
+                    }
+                    
+                    if (PizzariaSabor15 == "")
+                    {
+                        $("#imagem15").css("display", "none");
+                        $("#divSabor15").css("display", "none");
+                        $("#divIngredientes15").css("display", "none");
+                        $("#divPreco15").css("display", "none");
+                    }
+                    if (PizzariaSabor16 == "")
+                    {
+                        $("#imagem16").css("display", "none");
+                        $("#divSabor16").css("display", "none");
+                        $("#divIngredientes16").css("display", "none");
+                        $("#divPreco16").css("display", "none");
+                    }
+                    if (PizzariaSabor17 == "")
+                    {
+                        $("#imagem17").css("display", "none");
+                        $("#divSabor17").css("display", "none");
+                        $("#divIngredientes17").css("display", "none");
+                        $("#divPreco17").css("display", "none");
+                    }
+                    if (PizzariaSabor18 == "")
+                    {
+                        $("#imagem18").css("display", "none");
+                        $("#divSabor18").css("display", "none");
+                        $("#divIngredientes18").css("display", "none");
+                        $("#divPreco18").css("display", "none");
+                    }
+                    if (PizzariaSabor19 == "")
+                    {
+                        $("#imagem19").css("display", "none");
+                        $("#divSabor19").css("display", "none");
+                        $("#divIngredientes19").css("display", "none");
+                        $("#divPreco19").css("display", "none");
+                    }
+                    if (PizzariaSabor20 == "")
+                    {
+                        $("#imagem20").css("display", "none");
+                        $("#divSabor20").css("display", "none");
+                        $("#divIngredientes20").css("display", "none");
+                        $("#divPreco20").css("display", "none");
+                    }
+                    if (PizzariaSabor21 == "")
+                    {
+                        $("#imagem21").css("display", "none");
+                        $("#divSabor21").css("display", "none");
+                        $("#divIngredientes21").css("display", "none");
+                        $("#divPreco21").css("display", "none");
+                    }
+                    if (PizzariaSabor22 == "")
+                    {
+                        $("#imagem22").css("display", "none");
+                        $("#divSabor22").css("display", "none");
+                        $("#divIngredientes22").css("display", "none");
+                        $("#divPreco22").css("display", "none");
+                    }
+                    if (PizzariaSabor23 == "")
+                    {
+                        $("#imagem23").css("display", "none");
+                        $("#divSabor23").css("display", "none");
+                        $("#divIngredientes23").css("display", "none");
+                        $("#divPreco23").css("display", "none");
+                    }
+                    if (PizzariaSabor24 == "")
+                    {
+                        $("#imagem24").css("display", "none");
+                        $("#divSabor24").css("display", "none");
+                        $("#divIngredientes24").css("display", "none");
+                        $("#divPreco24").css("display", "none");
+                    }
+                    if (PizzariaSabor25 == "")
+                    {
+                        $("#imagem25").css("display", "none");
+                        $("#divSabor25").css("display", "none");
+                        $("#divIngredientes25").css("display", "none");
+                        $("#divPreco25").css("display", "none");
+                    }
+                    if (PizzariaSabor26 == "")
+                    {
+                        $("#imagem26").css("display", "none");
+                        $("#divSabor26").css("display", "none");
+                        $("#divIngredientes26").css("display", "none");
+                        $("#divPreco26").css("display", "none");
+                    }
                      if (PizzariaSabor27 == "")
                     {
                         $("#imagem27").css("display", "none");
+                        $("#divSabor27").css("display", "none");
+                        $("#divIngredientes27").css("display", "none");
+                        $("#divPreco27").css("display", "none");
                     }
                      if (PizzariaSabor28 == "")
                     {
                         $("#imagem28").css("display", "none");
+                        $("#divSabor28").css("display", "none");
+                        $("#divIngredientes28").css("display", "none");
+                        $("#divPreco28").css("display", "none");
                     }
                      if (PizzariaSabor29 == "")
                     {
                         $("#imagem29").css("display", "none");
+                        $("#divSabor29").css("display", "none");
+                        $("#divIngredientes29").css("display", "none");
+                        $("#divPreco29").css("display", "none");
                     }
                      if (PizzariaSabor30 == "")
                     {
                         $("#imagem30").css("display", "none");
+                        $("#divSabor30").css("display", "none");
+                        $("#divIngredientes30").css("display", "none");
+                        $("#divPreco30").css("display", "none");
                     }
                      if (PizzariaSabor31 == "")
                     {
                         $("#imagem31").css("display", "none");
+                        $("#divSabor31").css("display", "none");
+                        $("#divIngredientes31").css("display", "none");
+                        $("#divPreco31").css("display", "none");
                     }
                      if (PizzariaSabor32 == "")
                     {
                         $("#imagem32").css("display", "none");
+                        $("#divSabor32").css("display", "none");
+                        $("#divIngredientes32").css("display", "none");
+                        $("#divPreco32").css("display", "none");
                     }
                      if (PizzariaSabor33 == "")
                     {
                         $("#imagem33").css("display", "none");
+                        $("#divSabor33").css("display", "none");
+                        $("#divIngredientes33").css("display", "none");
+                        $("#divPreco33").css("display", "none");
                     }
                      if (PizzariaSabor34 == "")
                     {
                         $("#imagem34").css("display", "none");
+                        $("#divSabor34").css("display", "none");
+                        $("#divIngredientes34").css("display", "none");
+                        $("#divPreco34").css("display", "none");
                     }
                      if (PizzariaSabor35 == "")
                     {
                         $("#imagem35").css("display", "none");
+                        $("#divSabor35").css("display", "none");
+                        $("#divIngredientes35").css("display", "none");
+                        $("#divPreco35").css("display", "none");
                     }
                      if (PizzariaSabor36 == "")
                     {
                         $("#imagem36").css("display", "none");
+                        $("#divSabor36").css("display", "none");
+                        $("#divIngredientes36").css("display", "none");
+                        $("#divPreco36").css("display", "none");
                     }
                      if (PizzariaSabor37 == "")
                     {
                         $("#imagem37").css("display", "none");
+                        $("#divSabor37").css("display", "none");
+                        $("#divIngredientes37").css("display", "none");
+                        $("#divPreco37").css("display", "none");
                     }
                      if (PizzariaSabor38 == "")
                     {
                         $("#imagem38").css("display", "none");
+                        $("#divSabor38").css("display", "none");
+                        $("#divIngredientes38").css("display", "none");
+                        $("#divPreco38").css("display", "none");
                     }
                      if (PizzariaSabor39 == "")
                     {
                         $("#imagem39").css("display", "none");
+                        $("#divSabor39").css("display", "none");
+                        $("#divIngredientes39").css("display", "none");
+                        $("#divPreco39").css("display", "none");
                     }
                    
                     if (PizzariaSabor40 == "")
                     {
                         $("#imagem40").css("display", "none");
+                        $("#divSabor40").css("display", "none");
+                        $("#divIngredientes40").css("display", "none");
+                        $("#divPreco40").css("display", "none");
                     }
                     if (PizzariaSabor41 == "")
                     {
                         $("#imagem41").css("display", "none");
+                        $("#divSabor41").css("display", "none");
+                        $("#divIngredientes41").css("display", "none");
+                        $("#divPreco41").css("display", "none");
                     }
                     if (PizzariaSabor42 == "")
                     {
                         $("#imagem42").css("display", "none");
+                        $("#divSabor42").css("display", "none");
+                        $("#divIngredientes42").css("display", "none");
+                        $("#divPreco42").css("display", "none");
                     }
                     if (PizzariaSabor43 == "")
                     {
                         $("#imagem43").css("display", "none");
+                        $("#divSabor43").css("display", "none");
+                        $("#divIngredientes43").css("display", "none");
+                        $("#divPreco43").css("display", "none");
                     }
                     if (PizzariaSabor44 == "")
                     {
                         $("#imagem44").css("display", "none");
+                        $("#divSabor44").css("display", "none");
+                        $("#divIngredientes44").css("display", "none");
+                        $("#divPreco44").css("display", "none");
                     }
                     if (PizzariaSabor45 == "")
                     {
                         $("#imagem45").css("display", "none");
+                        $("#divSabor45").css("display", "none");
+                        $("#divIngredientes45").css("display", "none");
+                        $("#divPreco45").css("display", "none");
                     }
                     if (PizzariaSabor46 == "")
                     {
                         $("#imagem46").css("display", "none");
+                        $("#divSabor46").css("display", "none");
+                        $("#divIngredientes46").css("display", "none");
+                        $("#divPreco46").css("display", "none");
                     }
                     if (PizzariaSabor47 == "")
                     {
                         $("#imagem47").css("display", "none");
+                        $("#divSabor47").css("display", "none");
+                        $("#divIngredientes47").css("display", "none");
+                        $("#divPreco47").css("display", "none");
                     }
                     if (PizzariaSabor48 == "")
                     {
                         $("#imagem48").css("display", "none");
+                        $("#divSabor48").css("display", "none");
+                        $("#divIngredientes48").css("display", "none");
+                        $("#divPreco48").css("display", "none");
                     }
                     if (PizzariaSabor49 == "")
                     {
                         $("#imagem49").css("display", "none");
+                        $("#divSabor49").css("display", "none");
+                        $("#divIngredientes49").css("display", "none");
+                        $("#divPreco49").css("display", "none");
                     }
                     if (PizzariaSabor50 == "")
                     {
                         $("#imagem50").css("display", "none");
+                        $("#divSabor50").css("display", "none");
+                        $("#divIngredientes50").css("display", "none");
+                        $("#divPreco50").css("display", "none");
                     }
                     if (PizzariaSabor51 == "")
                     {
                         $("#imagem51").css("display", "none");
+                        $("#divSabor51").css("display", "none");
+                        $("#divIngredientes51").css("display", "none");
+                        $("#divPreco51").css("display", "none");
                     }
                     if (PizzariaSabor52 == "")
                     {
                         $("#imagem52").css("display", "none");
+                        $("#divSabor52").css("display", "none");
+                        $("#divIngredientes52").css("display", "none");
+                        $("#divPreco52").css("display", "none");
                     }
                     if (PizzariaSabor53 == "")
                     {
                         $("#imagem53").css("display", "none");
+                        $("#divSabor53").css("display", "none");
+                        $("#divIngredientes53").css("display", "none");
+                        $("#divPreco53").css("display", "none");
                     }
                     if (PizzariaSabor54 == "")
                     {
                         $("#imagem54").css("display", "none");
+                        $("#divSabor54").css("display", "none");
+                        $("#divIngredientes54").css("display", "none");
+                        $("#divPreco54").css("display", "none");
                     }
                     if (PizzariaSabor55 == "")
                     {
                         $("#imagem55").css("display", "none");
+                        $("#divSabor55").css("display", "none");
+                        $("#divIngredientes55").css("display", "none");
+                        $("#divPreco55").css("display", "none");
                     }
                     if (PizzariaSabor56 == "")
                     {
                         $("#imagem56").css("display", "none");
+                        $("#divSabor56").css("display", "none");
+                        $("#divIngredientes56").css("display", "none");
+                        $("#divPreco56").css("display", "none");
                     }
                     if (PizzariaSabor57 == "")
                     {
                         $("#imagem57").css("display", "none");
+                        $("#divSabor57").css("display", "none");
+                        $("#divIngredientes57").css("display", "none");
+                        $("#divPreco57").css("display", "none");
                     }
                     if (PizzariaSabor58 == "")
                     {
                         $("#imagem58").css("display", "none");
+                        $("#divSabor58").css("display", "none");
+                        $("#divIngredientes58").css("display", "none");
+                        $("#divPreco58").css("display", "none");
                     }
                     if (PizzariaSabor59 == "")
                     {
                         $("#imagem59").css("display", "none");
+                        $("#divSabor59").css("display", "none");
+                        $("#divIngredientes59").css("display", "none");
+                        $("#divPreco59").css("display", "none");
+                        
                     }
                     if (PizzariaSabor60 == "")
                     {
