@@ -34,7 +34,7 @@
 
 
             request
-                    .get('https://sopizzabrasil.herokuapp.com/consult')
+                    .get('sopizzabrasil.herokuapp.com/consult')
 
                     .end(function (err, res) {
 
