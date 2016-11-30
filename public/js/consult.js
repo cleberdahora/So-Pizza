@@ -26,7 +26,7 @@
             var request = require('superagent');
 
             request
-                    .get('/consult')
+                    .get('http://sopizzabrasil.herokuapp.com/consult')
 
                     .end(function (err, res) {
 
@@ -36,7 +36,7 @@
 
 
             request
-                    .get('/cardap')
+                    .get('http://sopizzabrasil.herokuapp.com/cardap')
 
                     .end(function (err, res) {
 
@@ -59,7 +59,7 @@
 
                 }
                 var id = getUrlVars()["id"];
-                $.get('/consult', function (pontos) {
+                $.get('http://sopizzabrasil.herokuapp.com/consult', function (pontos) {
 
                     var PizzariaID;
                     var PizzariaNome;
