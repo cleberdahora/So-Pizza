@@ -34,7 +34,7 @@
 
 
             request
-                    .get('sopizzabrasil.herokuapp.com/consult')
+                    .get('*/consult')
 
                     .end(function (err, res) {
 
@@ -71,7 +71,7 @@
                      latitude = position.coords.latitude;
                      longitude = position.coords.longitude;
                      
-                     $.get('http://sopizzabrasil.herokuapp.com/sugestoes?latitude=' + latitude + '&longitude=' + longitude + '', function (pontos) {
+                     $.get('*/sugestoes?latitude=' + latitude + '&longitude=' + longitude + '', function (pontos) {
                     var listaLongitude;
 
                     var PizzariaID1;
